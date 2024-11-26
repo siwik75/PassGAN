@@ -86,7 +86,7 @@ def Conv1D(name, input_dim, output_dim, filter_size, inputs, he_init=True, mask_
                 filters = filters * mask
 
         result = tf.nn.conv1d(
-            value=inputs, 
+            input=inputs, 
             filters=filters, 
             stride=stride,
             padding='SAME',
